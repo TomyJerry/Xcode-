@@ -1,5 +1,5 @@
-//კლავიატურის ჩაკეცვა
 
+//კლავიატურის ჩაკეცვა
 func touchesBegan(touches:Set<UITouch>, withEvent event:UIEvent?){
 self.view.endEditing(true)
 }
@@ -13,3 +13,5 @@ arc4random_uniform(UInt32 number)
 button.setTitleColor("ფერი", forState:UIControlState.Normal)
 
 
+//Button-ის კუთხის რადიუსი
+button.layer.cornerRadius=button.frame.width*0.05
