@@ -15,3 +15,14 @@ button.setTitleColor("ფერი", forState:UIControlState.Normal)
 
 //Button-ის კუთხის რადიუსი
 button.layer.cornerRadius=button.frame.width*0.05
+
+//სემენტის ინდექსი, აბრუნებს Int-ს რომელიც არის მონიშნული
+sender.SelectedSegmentIndex
+
+//alert-ის შექმნა
+func createalert(){
+   let alert = UIAalertController(title: "Title", message: "message", preferredStyle: UIAlertControllerStyle.alert)
+   alert.addAction(UIAalertController(title: "Title", style:UIAlertActionStyle.Default, handler: nil))
+    alert.addAction(UIAalertController(title: "Cansel", style:UIAlertActionStyle.Cansel, handler: nil))
+    presentViewController(alert, animated: true, completion: nil)
+}
