@@ -7,3 +7,9 @@ self.view.endEditing(true)
 
 //შემთხვევითი რიცხვების გენერირება 
 arc4random_uniform(UInt32 number)  
+
+
+//Button -ის ტექსტის ცვლილება
+button.setTitleColor("ფერი", forState:UIControlState.Normal)
+
+
