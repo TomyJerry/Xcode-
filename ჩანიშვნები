@@ -16,7 +16,7 @@ button.layer.cornerRadius=button.frame.width*0.05
 //სემენტის ინდექსი, აბრუნებს Int-ს რომელიც არის მონიშნული
 sender.SelectedSegmentIndex
 
-//alert-ის შექმნა
+//alert-ის შექმნა, hendler ში nil ის მაგივრად უნდა გადავაწოდოთ ფუნქცია ანუ რაც გვინდა რო მოხდეს დაჭერის შემდეგ
 func createalert(){
    let alert = UIAalertController(title: "Title", message: "message", preferredStyle: UIAlertControllerStyle.alert)
    alert.addAction(UIAalertController(title: "Title", style:UIAlertActionStyle.Default, handler: nil))
