@@ -3,3 +3,7 @@
 func touchesBegan(touches:Set<UITouch>, withEvent event:UIEvent?){
 self.view.endEditing(true)
 }
+
+
+//შემთხვევითი რიცხვების გენერირება 
+arc4random_uniform(UInt32 number)  
