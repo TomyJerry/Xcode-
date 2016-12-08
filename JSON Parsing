@@ -1,0 +1,63 @@
+
+import UIKit
+class ViewController: UIViewController {
+    
+    let baseURL="http://pitagora.ge/data/data.json"
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        getjson()
+        
+    }
+
+    
+    func getjson(){
+    
+        let url=NSURL(string: baseURL)
+        let request=NSURLRequest(URL: url!)
+    
+        let session=NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+        
+        let task=session.dataTaskWithRequest(request){(data,response,error)->Void in
+            
+            if error==nil{
+            
+                do {
+                    let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+//                    print(json)
+                    if let array = json as? NSArray {
+                        for blog in array {
+                            if let name = blog["text"] as? String {
+                                print(name)
+                            }
+                        }
+                    }
+                } catch {
+                    print("error serializing JSON: \(error)")
+                }
+                
+             
+            }
+            
+            else {
+            
+            
+            print ("no error")
+            
+            }
+        
+        
+        
+        }
+        
+        
+    task.resume()
+    
+    }
+          
+
+
+}
+
