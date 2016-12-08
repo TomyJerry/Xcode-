@@ -23,3 +23,9 @@ func createalert(){
     alert.addAction(UIAalertController(title: "Cansel", style:UIAlertActionStyle.Cansel, handler: nil))
     presentViewController(alert, animated: true, completion: nil)
 }
+
+//ტაგირება და view-ების ჩაშლა--view-ში არსებულ ღილაკებს უცვლის ფერს
+for item in view.subviews where item is UIButton{
+item.backgroundColor=UIColor.purpleColor()
+}
+
