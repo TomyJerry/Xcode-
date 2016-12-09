@@ -29,3 +29,16 @@ for item in view.subviews where item is UIButton{
 item.backgroundColor=UIColor.purpleColor()
 }
 
+//TableView-ს აქვს პროტოკოლები რომლებიც უნდა ჩავუწეროთ კლასში
+UITableViewDataSource (აქვს ფუნქციები რომლებიც აუცილებლად უნდა გადავფაროთ) , UITableViewDelegate
+
+//TableView-ში სექციების რაოდენობა. return ში ჩავწერთ რაოდენობას
+func numberOfSectionsInTableView(tavleView: UITableView) -> Int{
+   return 1
+}
+
+//TableView-ში Row ების რაოდენობა
+func tableView(tableView: UITavleView, numberOfRowsInSection section: Int) -> Int {
+   return 10
+}
+
