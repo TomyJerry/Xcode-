@@ -42,3 +42,9 @@ func tableView(tableView: UITavleView, numberOfRowsInSection section: Int) -> In
    return 10
 }
 
+//TableView-ში cell-ის შექმნა. ანუ სექციაში რაც გვინდა რო გამოვიძახოთ. ამ შემთხვევაში დაიბეჭდება ragaca
+func tableView(tableView: UITavleView, CellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+let cell = UITableViewCell()
+cell.textLabel?.text = "ragaca"
+return cell
+}
