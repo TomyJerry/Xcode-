@@ -48,3 +48,7 @@ let cell = UITableViewCell()
 cell.textLabel?.text = "ragaca"
 return cell
 }
+
+//row-ს ინდექსი
+indexPath.row
+
