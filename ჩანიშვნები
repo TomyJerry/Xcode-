@@ -57,3 +57,8 @@ let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: ind
 
 //კოდიდან სურათის მინიჭება
 imageName.image = UIImage(named: "suratis saxeli")
+
+//row-ზე დაკლიკების დაჭერა
+func tableView(tableView: UITavleView, didSelectRowAtIndexPath indexPath:NSIndexPath){
+print(indexPath.row) //ტანში ჩავწერთ რაც გვინდა რომ დაჭერის შემდეგ მოხდეს, ამ შემთხვევაში ინდექსს ბეჭდავს
+}
