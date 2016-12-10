@@ -55,3 +55,5 @@ indexPath.row
 //იდენთიფიკატორით cell-ის დაბრუნება.. პარამეტრად რაც გადაეწოდება cell არის identifier-ში რასაც ჩავწერთ. 
 let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CastomTableViewCell
 
+//კოდიდან სურათის მინიჭება
+imageName.image = UIImage(named: "suratis saxeli")
