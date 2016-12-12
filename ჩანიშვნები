@@ -62,3 +62,14 @@ imageName.image = UIImage(named: "suratis saxeli")
 func tableView(tableView: UITavleView, didSelectRowAtIndexPath indexPath:NSIndexPath){
 print(indexPath.row) //ტანში ჩავწერთ რაც გვინდა რომ დაჭერის შემდეგ მოხდეს, ამ შემთხვევაში ინდექსს ბეჭდავს
 }
+
+//row-ს delete ანიმაციით
+func tableView(tableView: UITavleView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath: NSIndexPass){
+if editingStyle == UITableViewCellEditingStyle.Delete{
+model.removeAtIndex(indexPath.row)
+tableView.reloadData()
+model.removeAtIndex(index.Path.row)
+tableView.deleteRowsAtIndexPass([indexPass], withRowAnimation: UITableViewRowAnimation.Fade)
+   }
+}
+
