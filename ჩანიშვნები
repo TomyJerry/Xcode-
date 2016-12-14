@@ -75,3 +75,17 @@ tableView.deleteRowsAtIndexPass([indexPass], withRowAnimation: UITableViewRowAni
 
 //cell-ზე დაჭერით ახალ ფანჯარაზე გადასვლა, P.S. უნდა ჩავწეროთ row-ზე დაკლიკების ფუნქციაში
 performSegueWithIdentifer("segue", sender: self)
+
+
+
+//ფუნქცია რომელიც ამზადებს segues სანამ ის გაეშვება 
+func prepareForSegue(segue: UIStorboardSegue, sender: AnyObject?) {
+let c = segue.destinationViewController as! აქ შენი კლასის ტიპი
+
+c.label.text="ddsdsd"
+
+
+}
+
+
+
