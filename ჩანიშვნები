@@ -89,3 +89,14 @@ self.navigationController?.popViewControllerAnimated(true)
 
 //ფერების hex კოდიდან rgb-ში გადასაყვანი საიტი. p.s. 255-ზე უნდა გავყოთ მერე.
 http://www.webpagefx.com/web-design/hex-to-rgb/
+
+
+//ნოტიფიკაციებისთვის საჭირო კოდი AppDelegate-ში, იმისთვის რომ ნებართვა აიღოს USer-გან
+func application (application: UIApplication, didFinishLaunchingWhitOption..........................)
+{
+
+application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.ALert | UIUserNotificationType.Badge
+| UIUserNotificationType.Sound, categories:nil))
+
+
+}
