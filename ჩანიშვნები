@@ -100,3 +100,16 @@ application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes
 
 
 }
+
+
+//ნოტიფიკაციებს ფუნქციის ტანი 
+
+func Notification()
+{
+var Notification = UILocalNotification()
+Notification.alertAction = "Go Back to App"
+Notification.alertBody = NSDate(timeIntervalSinceNow:0)
+
+UIApplication.sharedApplication().scheduleLocalNotification(Notification)
+
+}
