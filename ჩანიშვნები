@@ -113,3 +113,6 @@ Notification.alertBody = NSDate(timeIntervalSinceNow:0)
 UIApplication.sharedApplication().scheduleLocalNotification(Notification)
 
 }
+
+
+//როდესაც ორჯერ ხდება სწრაფად ერთი და იგივე segue მაშინ ღილაკზეცაა მიბმული და კოდიდანაც. !!!!!!!!!!!!!!!!!
