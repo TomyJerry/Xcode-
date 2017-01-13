@@ -87,6 +87,12 @@ c.label.text="ddsdsd"
 //Back - ისე რომ დაიხუროს გვერდი 
 self.navigationController?.popViewControllerAnimated(true)
 
+// textfild - ში ჩადგომისას კლავიატურა რომ არ ამოვიდეს
+func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        return false
+    }
+
+
 //ფერების hex კოდიდან rgb-ში გადასაყვანი საიტი. p.s. 255-ზე უნდა გავყოთ მერე.
 http://www.webpagefx.com/web-design/hex-to-rgb/
 
