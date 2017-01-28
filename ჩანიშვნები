@@ -159,3 +159,7 @@ func getCurrentLocalDate()-> Date {
 func searchBar(searchBar: UISearchBar, textDidCange searchTextL String){
 print(searchText)
 }
+
+//search bar  ის ფუნქცია. search button ზე დაჭერის შემდეგ დაიწყებს ძებნას
+searchBarSearchButtonCklicked(searchbar: UISearchBar)
+
