@@ -163,3 +163,6 @@ print(searchText)
 //search bar  ის ფუნქცია. search button ზე დაჭერის შემდეგ დაიწყებს ძებნას
 searchBarSearchButtonCklicked(searchbar: UISearchBar)
 
+//Frame და Bounds 
+frame= ადგილმდეობარეობა და ზომა განისაზღვრება მშობლის კოორდინატთა სისტემით
+bunds = ადგილმდებარეობა და ზომა განისაზღვრება საკუთარი კოორდინატთა სისტემით
