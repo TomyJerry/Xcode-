@@ -170,3 +170,7 @@ bunds = ადგილმდებარეობა და ზომა გა
 ნაწილს დავინახავთ   სრული სტატია http://stackoverflow.com/questions/1210047/cocoa-whats-the-difference-between-the-frame-and-the-bounds/28917673#28917673
 
 Bar Button Item ის ზომა უნდა იყოს 22x22 44x44 66x66 pixel
+
+
+// როგორ ვხურავტ მიმდინარე ViewControllers როცა გადასვლას ვაკეთებთ modal-ით
+self.dismissViewControllerAnimated(true, completion: nil)
