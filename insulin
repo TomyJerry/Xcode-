@@ -24,3 +24,7 @@ https://github.com/zemirco/swift-linechart line charts
  
  
  }
+
+
+//solid Colors for shapes 
+CGContextSetFillColorWithColor (context, UIColor.redColor().CGColor)
