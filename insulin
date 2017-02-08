@@ -8,3 +8,19 @@ https://github.com/ahmedabadie/ABNScheduler
 
 http://www.informit.com/articles/article.aspx?p=2160906    //good article about coredata
 https://github.com/zemirco/swift-linechart line charts
+
+
+//Draw a Rectangle--------------
+ override func drawRect (rect: CGRect) {
+ let context = UIGraphicsGetCurrentContext()
+ CGContextSetLineWidth (context, 3.0)
+ CGContextSetStrokeColorWithColor (context, UIColor.purrpleColor().CGColor)
+ 
+ let rectangle = CGRect (x,y, height, width)
+ CGContextAddRect (context, rectangle)
+ 
+ CGContextStrokePath(context)
+ 
+ 
+ 
+ }
