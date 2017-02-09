@@ -33,4 +33,4 @@ CGContextFillPath (context)
 
 //view- ავხადოთ გამჭვირვალე popup-ებში გამოვიყენე 
 viewdidload-ში ვწერთ შემდეგს
-self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0,8)
+self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
