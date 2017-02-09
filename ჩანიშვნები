@@ -174,3 +174,9 @@ Bar Button Item ის ზომა უნდა იყოს 22x22 44x44 66x66 
 
 // როგორ ვხურავტ მიმდინარე ViewControllers როცა გადასვლას ვაკეთებთ modal-ით
 self.dismissViewControllerAnimated(true, completion: nil)
+
+// ქვეყნების json
+https://restcountries.eu/rest/v1/all
+
+// chrome json view
+https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en
