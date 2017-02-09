@@ -29,3 +29,8 @@ https://github.com/zemirco/swift-linechart line charts
 //solid Colors for shapes 
 CGContextSetFillColorWithColor (context, UIColor.redColor().CGColor)
 CGContextFillPath (context)
+
+
+//view- ავხადოთ გამჭვირვალე popup-ებში გამოვიყენე 
+viewdidload-ში ვწერთ შემდეგს
+self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0,8)
